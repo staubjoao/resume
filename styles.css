@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #282a36;
+}
+
+body hr {
+  border: 0.1rem solid #ff5555;
+}
+
+body header {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+body header .name h2 {
+  align-items: initial;
+  font-family: "Press Start 2P";
+  font-size: 2rem;
+  margin-top: 1.8rem;
+  color: #50fa7b;
+}
+
+body header .incons ul li {
+  list-style: none;
+}
+
+body header .incons ul li img {
+  width: 1.2rem;
+  margin: 0.1rem;
+  background-color: #8be9fd;
+  border-radius: 60%;
+}
+
+body main {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+body main .text{
+    text-indent: 1rem;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+body main div + div {
+  margin-top: 2rem;
+}
+
+body main h3 {
+  font-family: "Open Sans";
+  color: #ff79c6;
+}
+
+body main p + p {
+  margin-top: 0.7rem;
+}
+
+body main p {
+  font-family: "Archivo";
+  color: #f8f8f2;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+body main p strong {
+  color: #f1fa8c;
+}
+
+body main p .blue {
+  color: #8be9fd;
+}
