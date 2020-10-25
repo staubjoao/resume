@@ -48,7 +48,6 @@ body header .incons ul li {
 body header .incons ul li img {
   width: 3rem;
   margin: 0.1rem;
-  /* background-color: #8be9fd; */
 }
 
 body main {
@@ -68,6 +67,7 @@ body main div + div {
 
 body main h3 {
   font-family: "Open Sans";
+  font-size: 1.5rem;
   color: #ff79c6;
 }
 
@@ -77,7 +77,7 @@ body main p + p {
 
 body main p {
   font-family: "Archivo";
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #f8f8f2;
   margin-left: 1rem;
   margin-top: 0.5rem;
@@ -97,7 +97,7 @@ body main ul {
 
 body main ul li {
   font-family: "Archivo";
-  font-size: 1.8rem;
+  font-size: 3rem;
   margin-left: 1rem;
   color: #f8f8f2;
   list-style: none;
