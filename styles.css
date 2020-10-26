@@ -26,6 +26,7 @@ body header .name h2 {
   font-size: 4rem;
   margin-top: 1.8rem;
   color: #50fa7b;
+  text-shadow: #ff79c6 0.1em 0.1em;
 }
 
 body header .incons {
@@ -45,13 +46,18 @@ body header .incons ul li {
   margin: 0.4rem;
 }
 
+body header .incons ul li button{
+  border: none;
+  background-color: #282a36;
+}
+
 body header .incons ul li img {
   width: 3rem;
   margin: 0.1rem;
 }
 
 body main {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 0.5rem;
 }
 
@@ -69,6 +75,7 @@ body main h3 {
   font-family: "Open Sans";
   font-size: 1.5rem;
   color: #ff79c6;
+  text-shadow: #50fa7b 0.1em 0.1em;
 }
 
 body main p + p {
@@ -81,9 +88,10 @@ body main p {
   color: #f8f8f2;
   margin-left: 1rem;
   margin-top: 0.5rem;
+  text-shadow: #20212b 0.1em 0.1em;
 }
 
-body main p strong {
+body main p .yellow {
   color: #f1fa8c;
 }
 

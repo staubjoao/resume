@@ -9,6 +9,8 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Currículo</title>
   </head>
   <body>
@@ -31,16 +33,18 @@
             /></a>
           </li>
           <li>
-            <a href="#" target="_blank"
-              ><img src="./assets/email-icon.svg" alt="email-icon"
-            /></a>
-          </li>
-          <li>
             <a
               href="https://api.whatsapp.com/send?phone=5544997177098"
               target="_blank"
               ><img src="./assets/whatsapp-icon.svg" alt="whatsapp-icon"
             /></a>
+          </li>
+          <li>
+            <!-- <a href="mailto:joao.staub42@gmail.com"><img src="./assets/email-icon.svg" alt="email-icon"
+                          /></a> -->
+            <button onclick="copyText()">
+              <img src="./assets/email-icon.svg" alt="email-icon" />
+            </button>
           </li>
         </ul>
       </div>
@@ -55,13 +59,19 @@
         <div>
           <h3>Formação</h3>
           <p>
-            <strong> Instituto Federal do Paraná, Paranavaí</strong> —
+            <strong class="yellow">
+              Instituto Federal do Paraná, Paranavaí</strong
+            >
+            —
             <strong class="blue"> Médio</strong>
             <br />
             2016 — 2019 — Curso técnico em informática.
           </p>
           <p>
-            <strong> Universidade Estadual de Maringá, Maringá </strong> —
+            <strong class="yellow">
+              Universidade Estadual de Maringá, Maringá
+            </strong>
+            —
             <strong class="blue">Graduação</strong>
             <br />
             2020 — &nbsp&nbsp &nbsp &nbsp &nbsp — Ciência da Computação.
@@ -71,7 +81,7 @@
           <h3>Projetos</h3>
           <p>
             <a href="https://github.com/staubjoao/BuscaEmpregos" target="_blank"
-              ><strong>BuscaEmpregos </strong></a
+              ><strong class="yellow">BuscaEmpregos </strong></a
             >
             —
             <strong class="blue"> Site de empregos </strong>
@@ -82,7 +92,7 @@
             Bootstrap, JS, jQuery e SQL.
           </p>
           <p>
-            <strong>Análise do BuscaEmpregos</strong> —
+            <strong class="yellow">Análise do BuscaEmpregos</strong> —
             <strong class="blue">Análise e desenvolvimento de sistema </strong>
           </p>
           <p class="text">
@@ -93,14 +103,13 @@
         </div>
         <div>
           <h3>Tecnologias</h3>
-        </div>
-        <div>
-          <p>PHP, HTML, CSS, JS, SQL;
-            <br>
+          <p>
+            PHP, HTML, CSS, JS, SQL;
+            <br />
             Bootstrap, jQuery;
-            <br>
-            Java, C, POO; 
-            <br>
+            <br />
+            Java, C, POO;
+            <br />
             React & Node (básicos).
           </p>
         </div>
@@ -113,3 +122,17 @@
     </main>
   </body>
 </html>
+
+<script>
+  let copyText = () => {
+    const text = "joao.staub42@gmail.com";
+
+    let inputTest = document.createElement("input");
+    inputTest.value = text;
+    document.body.appendChild(inputTest);
+    inputTest.select();
+    document.execCommand("copy");
+    document.body.removeChild(inputTest);
+    alert("e-mail copiado para a área de transferência");
+  };
+</script>
