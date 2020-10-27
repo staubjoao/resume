@@ -12,7 +12,7 @@ body hr {
 }
 
 body header {
-  margin: 1rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 5fr 2fr;
   flex-flow: row wrap;
@@ -37,13 +37,16 @@ body header .incons ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
-  margin-top: 2.2rem;
+  margin-top: 1.9rem;
 }
 
 body header .incons ul li {
   list-style: none;
   display: inline;
   margin: 0.4rem;
+}
+
+body header .incons ul li + li{
 }
 
 body header .incons ul li button{
