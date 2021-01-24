@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    
-    <link rel="icon" href="assets/icon.png">
+
+    <link rel="icon" href="assets/icon.png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Merriweather:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&display=swap"
@@ -14,6 +14,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Currículo - João Staub</title>
+
+    <script>
+      function setCookie(nome, valor, dias) {
+        diasms = new Date().getTime() + 1000 * 3600 * 24 * dias;
+        dias = new Date(diasms);
+        expires = dias.toGMTString();
+        document.cookie =
+          escape(nome) + "=" + escape(valor) + "; expires=" + expires;
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -129,7 +139,7 @@
         </div>
       </div>
     </main>
-    <div style="float: right;">
+    <div style="float: right">
       <p>🦄</p>
     </div>
   </body>
@@ -147,4 +157,19 @@
     document.body.removeChild(inputTest);
     alert("e-mail copiado para a área de transferência");
   };
+
+  if (!document.cookie) {
+    setCookie("cookie", "1", 365);
+    document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
+  } else {
+    var cont = document.cookie;
+    var dividindo = cont.split("=");
+    //document.write(dividindo[1]);
+    var numero = parseInt(dividindo[1]);
+    var soma = numero + 1;
+    document.write(
+      "<font face='verdana' size='1'>"+ soma + "</font>"
+    );
+    setCookie("cookie", soma, 365);
+  }
 </script>
