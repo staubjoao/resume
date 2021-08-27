@@ -1,106 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
 
     <link rel="icon" href="assets/icon.png" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Merriweather:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Merriweather:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Currículo - João Staub</title>
-
     <script>
-      function setCookie(nome, valor, dias) {
-        diasms = new Date().getTime() + 1000 * 3600 * 24 * dias;
-        dias = new Date(diasms);
-        expires = dias.toGMTString();
-        document.cookie =
-          escape(nome) + "=" + escape(valor) + "; expires=" + expires;
-      }
+        function setCookie(nome, valor, dias) {
+            diasms = new Date().getTime() + 1000 * 3600 * 24 * dias;
+            dias = new Date(diasms);
+            expires = dias.toGMTString();
+            document.cookie =
+                escape(nome) + "=" + escape(valor) + "; expires=" + expires;
+        }
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="name">
-        <h2>João Staub</h2>
-      </div>
-      <div class="incons">
-        <ul>
-          <li>
-            <a href="https://github.com/staubjoao" target="_blank"
-              ><img src="./assets/github-icon.svg" alt="github-icon"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jo%C3%A3o-staub-castanho-463b41191/"
-              target="_blank"
-              ><img src="./assets/linkedin-icon.svg" alt="linke-icon"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/joaovitor.staubcastanho.7/"
-              target="_blank"
-              ><img src="./assets/facebook-icon.svg" alt="linke-icon"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=5544997177098"
-              target="_blank"
-              ><img src="./assets/whatsapp-icon.svg" alt="whatsapp-icon"
-            /></a>
-          </li>
-          <li>
-            <!-- <a href="mailto:joao.staub42@gmail.com"><img src="./assets/email-icon.svg" alt="email-icon"
+        <div class="name">
+            <h2>João Staub</h2>
+        </div>
+        <div class="incons">
+            <ul>
+                <li>
+                    <a href="https://github.com/staubjoao" target="_blank"><img src="./assets/github-icon.svg" alt="github-icon" /></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-staub-castanho-463b41191/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="linke-icon" /></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/joaovitor.staubcastanho.7/" target="_blank"><img src="./assets/facebook-icon.svg" alt="linke-icon" /></a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5544997177098" target="_blank"><img src="./assets/whatsapp-icon.svg" alt="whatsapp-icon" /></a>
+                </li>
+                <li>
+                    <!-- <a href="mailto:joao.staub42@gmail.com"><img src="./assets/email-icon.svg" alt="email-icon"
                           /></a> -->
-            <button onclick="copyText()">
+                    <button onclick="copyText()">
               <img src="./assets/email-icon.svg" alt="email-icon" />
             </button>
-          </li>
-        </ul>
-      </div>
+                </li>
+            </ul>
+        </div>
     </header>
     <hr />
     <main>
-      <div id="resume">
-        <div>
-          <h3>Experiência</h3>
-          <p>Não possuo experiência profissional.</p>
-        </div>
-        <div>
-          <h3>Formação</h3>
-          <p>
-            <strong class="yellow">
+        <div id="resume">
+            <div>
+                <h3>Experiência</h3>
+                <p>Não possuo experiência profissional.</p>
+            </div>
+            <div>
+                <h3>Formação</h3>
+                <p>
+                    <strong class="yellow">
               Instituto Federal do Paraná, Paranavaí</strong
             >
             —
             <strong class="blue"> Médio</strong>
-            <br />
-            2016 — 2019 — Curso técnico em informática.
-          </p>
-          <p>
-            <strong class="yellow">
+                    <br /> 2016 — 2019 — Curso técnico em informática.
+                </p>
+                <p>
+                    <strong class="yellow">
               Universidade Estadual de Maringá, Maringá
-            </strong>
-            —
-            <strong class="blue">Graduação</strong>
-            <br />
-            2020 — &nbsp&nbsp &nbsp &nbsp &nbsp — Ciência da Computação.
-          </p>
-        </div>
-        <div>
-          <h3>Projetos</h3>
-          <p>
-            <a href="https://github.com/staubjoao/BuscaEmpregos" target="_blank"
-              ><strong class="yellow">BuscaEmpregos </strong></a
+            </strong> —
+                    <strong class="blue">Graduação</strong>
+                    <br /> 2020 — &nbsp&nbsp &nbsp &nbsp &nbsp — Ciência da Computação.
+                </p>
+            </div>
+            <div>
+                <h3>Projetos</h3>
+                <p>
+                    <a href="https://github.com/staubjoao/BuscaEmpregos" target="_blank"><strong class="yellow">BuscaEmpregos </strong></a
             >
             —
             <strong class="blue"> Site de empregos </strong>
