@@ -1,154 +1,280 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8" />
-
-    <link rel="icon" href="assets/icon.png" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Merriweather:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icons/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title>Currículo - João Staub</title>
-    <script>
-        function setCookie(nome, valor, dias) {
-            diasms = new Date().getTime() + 1000 * 3600 * 24 * dias;
-            dias = new Date(diasms);
-            expires = dias.toGMTString();
-            document.cookie =
-                escape(nome) + "=" + escape(valor) + "; expires=" + expires;
-        }
-    </script>
-</head>
-
-<body>
-    <header>
-        <div class="name">
-            <h2>João Staub</h2>
+    <title>João Staub</title>
+  </head>
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav_logo">João</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">
+                <i class="bx bx-home-alt nav_icon"></i>Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#profile" class="nav_link">
+                <i class="bx bx-user nav_icon"></i>Perfil
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#education" class="nav_link">
+                <i class="bx bx-book-alt nav_icon"></i>Educação
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="bx bx-code-alt nav_icon"></i>Tecnologias
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#experience" class="nav_link">
+                <i class="bx bx-briefcase nav_icon"></i>Experiências
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="incons">
-            <ul>
-                <li>
-                    <a href="https://github.com/staubjoao" target="_blank"><img src="./assets/github-icon.svg" alt="github-icon" /></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-staub-castanho-463b41191/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="linke-icon" /></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/joaovitor.staubcastanho.7/" target="_blank"><img src="./assets/facebook-icon.svg" alt="linke-icon" /></a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5544997177098" target="_blank"><img src="./assets/whatsapp-icon.svg" alt="whatsapp-icon" /></a>
-                </li>
-                <li>
-                    <!-- <a href="mailto:joao.staub42@gmail.com"><img src="./assets/email-icon.svg" alt="email-icon"
-                          /></a> -->
-                    <button onclick="copyText()">
-              <img src="./assets/email-icon.svg" alt="email-icon" />
-            </button>
-                </li>
-            </ul>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
         </div>
+      </nav>
     </header>
-    <hr />
-    <main>
-        <div id="resume">
-            <div>
-                <h3>Experiência</h3>
-                <p>Não possuo experiência profissional.</p>
+    <main class="l-main bd-container">
+      <div class="resume" id="area-cv">
+        <div class="resume_left">
+          <section class="home" id="home">
+            <div class="home_container section bd-grid">
+              <div class="home_data bd-grid">
+                <img src="assets/image/profile.jpg" alt="" class="home_img" />
+                <h1 class="home_title">João <b>Staub</b></h1>
+                <h3 class="home_profession">Estudante</h3>
+                <div>
+                  <a download="" href="" class="home_button-movil">download</a>
+                </div>
+              </div>
+              <div class="home_address bd-grid">
+                <span class="home_information">
+                  <i class="bx bx-map home_icon"></i> Nova Esperança - PR
+                </span>
+                <span class="home_information">
+                  <i class="bx bx-envelope home_icon"></i>
+                  joao.staub42@gmail.com
+                </span>
+                <span class="home_information">
+                  <i class="bx bx-phone home_icon"></i> (44) 997177098
+                </span>
+              </div>
             </div>
-            <div>
-                <h3>Formação</h3>
-                <p>
-                    <strong class="yellow">
-              Instituto Federal do Paraná, Paranavaí</strong
-            >
-            —
-            <strong class="blue"> Médio</strong>
-                    <br /> 2016 — 2019 — Curso técnico em informática.
-                </p>
-                <p>
-                    <strong class="yellow">
-              Universidade Estadual de Maringá, Maringá
-            </strong> —
-                    <strong class="blue">Graduação</strong>
-                    <br /> 2020 — &nbsp&nbsp &nbsp &nbsp &nbsp — Ciência da Computação.
-                </p>
+            <i
+              class="bx bxs-moon chage-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+          <section class="social section">
+            <h2 class="section-title">social</h2>
+            <div class="social_container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-staub-castanho-463b41191/"
+                target="_blank"
+                class="social_link"
+              >
+                <i class="bx bxl-linkedin social_icon"></i>João Staub
+              </a>
+              <a
+                href="https://twitter.com/jaost42"
+                target="_blank"
+                class="social_link"
+              >
+                <i class="bx bxl-twitter social_icon"></i>@jaost42
+              </a>
+              <a
+                href="https://www.instagram.com/jaost42/"
+                target="_blank"
+                class="social_link"
+              >
+                <i class="bx bxl-instagram social_icon"></i>@jaost42
+              </a>
             </div>
-            <div>
-                <h3>Projetos</h3>
-                <p>
-                    <a href="https://github.com/staubjoao/BuscaEmpregos" target="_blank"><strong class="yellow">BuscaEmpregos </strong></a
-            >
-            —
-            <strong class="blue"> Site de empregos </strong>
-          </p>
-          <p class="text">
-            Um site de empregos onde a empresa consegue buscar um funcionário
-            que se enquadre para uma vaga específica. Utilizando PHP, HTML,
-            Bootstrap, JS, jQuery e SQL.
-          </p>
-          <p>
-            <strong class="yellow">Análise do BuscaEmpregos</strong> —
-            <strong class="blue">Análise e desenvolvimento de sistema </strong>
-          </p>
-          <p class="text">
-            Para realizar o site citado acima, passei um ano, com um grupo de
-            pessoas e durante as aulas, analisando uma empresa fictícia e a
-            viabilidade de implementação do sistema.
-          </p>
+          </section>
+          <section class="profile section" id="profile">
+            <h2 class="section-title">perfil</h2>
+            <p class="profile_description">
+              Faço Ciência da Computação, e desde muito novo sou apaixonado pela
+              área. Me interesso por Inteligência Artificial, mas estou buscando
+              algo menos complicado para aprender. Estou constantemente tentando
+              aprender coisas novas, e tentando desenvolver/criar algo. Gosto de
+              jogar no meu tempo livre.
+            </p>
+          </section>
         </div>
-        <div>
-          <h3>Tecnologias</h3>
-          <p>
-            PHP, HTML, CSS, JS, SQL;
-            <br />
-            Bootstrap, jQuery;
-            <br />
-            Java, C, POO;
-            <br />
-            React & Node (básicos).
-          </p>
-        </div>
-        <div>
-          <h3>Idiomas</h3>
-          <p>Português fluente;</p>
-          <p>Inglês básico.</p>
+        <div class="resume_right">
+          <section class="education section" id="education">
+            <h2 class="section-title">Educação</h2>
+            <div class="education_container bd-grid">
+              <div class="education_content">
+                <div class="education_time">
+                  <span class="education_rounder"></span>
+                  <span class="education_line"></span>
+                </div>
+                <div class="education_data bd-grid">
+                  <h3 class="education_titl">Tecnico em Informatica</h3>
+                  <span class="education_studies"
+                    >Intituto Federal do Paraná</span
+                  >
+                  <span class="education_year">2016 - 2019</span>
+                </div>
+              </div>
+            </div>
+            <div class="education_container bd-grid">
+              <div class="education_content">
+                <div class="education_time">
+                  <span class="education_rounder"></span>
+                  <!-- <span class="education_line"></span> -->
+                </div>
+                <div class="education_data bd-grid">
+                  <h3 class="education_title">Ciencia da Computação</h3>
+                  <span class="education_studies"
+                    >Universidade Estadual de Maringá</span
+                  >
+                  <span class="education_year">2020 - 2024</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="skills section" id="skills">
+            <h2 class="section-title">tecnologias</h2>
+            <div class="skills_content bd-grid">
+              <ul class="skills_data">
+                <li class="skills_name">
+                  <span class="skills_circle"></span>Java
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>C
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>Python
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>MySQL
+                </li>
+              </ul>
+              <ul class="skills_data">
+                <li class="skills_name">
+                  <span class="skills_circle"></span>HTML
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>CSS
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>PHP
+                </li>
+                <li class="skills_name">
+                  <span class="skills_circle"></span>JS
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experiência</h2>
+
+            <div class="experience_container bd-grid">
+              <div class="experience_content">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title">
+                    Não possuo experiência profissional
+                  </h3>
+                  <!-- <span class="experience_company">De 20xx a 20xx</span>
+                  <p class="experience_description">Descrição</p> -->
+                </div>
+              </div>
+              <!-- <div class="experience_content">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title">não tenho</h3>
+                  <span class="experience_company">De 20xx a 20xx</span>
+                  <p class="experience_description">Descrição</p>
+                </div>
+              </div>
+              <div class="experience_content">
+                <div class="experience_time">
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+                <div class="experience_data bd-grid">
+                  <h3 class="experience_title">não tenho</h3>
+                  <span class="experience_company">De 20xx a 20xx</span>
+                  <p class="experience_description">Descrição</p>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          <section class="languages section">
+            <h2 class="section-title">línguas</h2>
+
+            <div class="languages_container">
+              <ul class="languages_content bd-grid">
+                <li class="languages_name">
+                  <span class="languages_circle"></span> Português - Fluente
+                </li>
+                <li class="languages_name">
+                  <span class="languages_circle"></span> Inglês - Básico
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="interests section">
+            <h2 class="section-title">interesses</h2>
+
+            <div class="interests_container bd-grid">
+              <div class="interests_content">
+                <i class="bx bx-bot interests_icon"></i>
+                <span class="interests_name">I.A.</span>
+              </div>
+              <div class="interests_content">
+                <i class="bx bx-game interests_icon"></i>
+                <span class="interests_name">Jogos</span>
+              </div>
+              <div class="interests_content">
+                <i class="bx bx-music interests_icon"></i>
+                <span class="interests_name">Música</span>
+              </div>
+              <div class="interests_content">
+                <i class="bx bx-code interests_icon"></i>
+                <span class="interests_name">Programar</span>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
-    <div style="float: right">
-      <p>🦄</p>
-    </div>
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bxs-arrow-from-bottom scrolltop_icon"></i>
+    </a>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
-
-<script>
-  let copyText = () => {
-    const text = "joao.staub42@gmail.com";
-
-    let inputTest = document.createElement("input");
-    inputTest.value = text;
-    document.body.appendChild(inputTest);
-    inputTest.select();
-    document.execCommand("copy");
-    document.body.removeChild(inputTest);
-    alert("e-mail copiado para a área de transferência");
-  };
-
-  if (!document.cookie) {
-    setCookie("cookie", "1", 365);
-    document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
-  } else {
-    var cont = document.cookie;
-    var dividindo = cont.split("=");
-    //document.write(dividindo[1]);
-    var numero = parseInt(dividindo[1]);
-    var soma = numero + 1;
-    document.write(
-      "<font face='verdana' size='1'>"+ soma + "</font>"
-    );
-    setCookie("cookie", soma, 365);
-  }
-</script>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="assets/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Merriweather:wght@300&family=Open+Sans:wght@600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Currículo - João Staub</title>
+    <script>
+      function setCookie(nome, valor, dias) {
+        diasms = new Date().getTime() + 1000 * 3600 * 24 * dias;
+        dias = new Date(diasms);
+        expires = dias.toGMTString();
+        document.cookie =
+          escape(nome) + "=" + escape(valor) + "; expires=" + expires;
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="name">
+        <h2>João Staub</h2>
+      </div>
+      <div class="incons">
+        <ul>
+          <li>
+            <a href="https://github.com/staubjoao" target="_blank"
+              ><img src="./assets/github-icon.svg" alt="github-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3o-staub-castanho-463b41191/"
+              target="_blank"
+              ><img src="./assets/linkedin-icon.svg" alt="linke-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/joaovitor.staubcastanho.7/"
+              target="_blank"
+              ><img src="./assets/facebook-icon.svg" alt="linke-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5544997177098"
+              target="_blank"
+              ><img src="./assets/whatsapp-icon.svg" alt="whatsapp-icon"
+            /></a>
+          </li>
+          <li>
+            <!-- <a href="mailto:joao.staub42@gmail.com"><img src="./assets/email-icon.svg" alt="email-icon"
+                          /></a> -->
+            <button onclick="copyText()">
+              <img src="./assets/email-icon.svg" alt="email-icon" />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="resume">
+        <div>
+          <h3>Experiência</h3>
+          <p>Não possuo experiência profissional.</p>
+        </div>
+        <div>
+          <h3>Formação</h3>
+          <p>
+            <strong class="yellow">
+              Instituto Federal do Paraná, Paranavaí</strong
+            >
+            —
+            <strong class="blue"> Médio</strong>
+            <br />
+            2016 — 2019 — Curso técnico em informática.
+          </p>
+          <p>
+            <strong class="yellow">
+              Universidade Estadual de Maringá, Maringá
+            </strong>
+            —
+            <strong class="blue">Graduação</strong>
+            <br />
+            2020 — &nbsp&nbsp &nbsp &nbsp &nbsp — Ciência da Computação.
+          </p>
+        </div>
+        <div>
+          <h3>Projetos</h3>
+          <p>
+            <a href="https://github.com/staubjoao/BuscaEmpregos" target="_blank"
+              ><strong class="yellow">BuscaEmpregos </strong></a
+            >
+            —
+            <strong class="blue"> Site de empregos </strong>
+          </p>
+          <p class="text">
+            Um site de empregos onde a empresa consegue buscar um funcionário
+            que se enquadre para uma vaga específica. Utilizando PHP, HTML,
+            Bootstrap, JS, jQuery e SQL.
+          </p>
+          <p>
+            <strong class="yellow">Análise do BuscaEmpregos</strong> —
+            <strong class="blue">Análise e desenvolvimento de sistema </strong>
+          </p>
+          <p class="text">
+            Para realizar o site citado acima, passei um ano, com um grupo de
+            pessoas e durante as aulas, analisando uma empresa fictícia e a
+            viabilidade de implementação do sistema.
+          </p>
+        </div>
+        <div>
+          <h3>Tecnologias</h3>
+          <div class="technology">
+            <img align="center" alt="Jao-Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+            <img align="center" alt="Jao-C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg">
+            <img align="center" alt="Jao-Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg">
+            <img align="center" alt="Jao-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
+            <img align="center" alt="Jao-Python" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg">
+            <img align="center" alt="Jao-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg">
+            <img align="center" alt="Jao-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg">
+            <img align="center" alt="Jao-Mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg">
+            <img align="center" alt="Jao-Postq" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg">
+            </ul>
+          </div>
+          <p>
+            PHP, HTML, CSS, JS, SQL;
+            <br />
+            Bootstrap, jQuery;
+            <br />
+            Java, C, POO;
+            <br />
+            React & Node (básicos).
+          </p>
+        </div>
+        <div>
+          <h3>Idiomas</h3>
+          <p>Português fluente;</p>
+          <p>Inglês básico.</p>
+        </div>
+      </div>
+    </main>
+    <div style="float: right">
+      <p>🦄</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  let copyText = () => {
+    const text = "joao.staub42@gmail.com";
+
+    let inputTest = document.createElement("input");
+    inputTest.value = text;
+    document.body.appendChild(inputTest);
+    inputTest.select();
+    document.execCommand("copy");
+    document.body.removeChild(inputTest);
+    alert("e-mail copiado para a área de transferência");
+  };
+
+  if (!document.cookie) {
+    setCookie("cookie", "1", 365);
+    document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
+  } else {
+    var cont = document.cookie;
+    var dividindo = cont.split("=");
+    //document.write(dividindo[1]);
+    var numero = parseInt(dividindo[1]);
+    var soma = numero + 1;
+    document.write("<font face='verdana' size='1'>" + soma + "</font>");
+    setCookie("cookie", soma, 365);
+  }
+</script>
