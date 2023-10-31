@@ -177,6 +177,7 @@ h3,
 ul,
 p {
   margin: 0;
+  text-align: justify;
 }
 
 h1,
