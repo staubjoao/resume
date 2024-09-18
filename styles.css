@@ -574,3 +574,26 @@ img {
     column-gap: 3.5rem;
   }
 }
+
+.experience_list {
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0;
+  margin: 10px 0;
+  font-size: var(--normal-font-size); /* Usa o tamanho de fonte padrão */
+  color: var(--text-color); /* Mantém a cor do texto */
+}
+
+.experience_list li {
+  position: relative;
+  padding-left: 20px; /* Espaço para o marcador */
+  margin-bottom: var(--mb-1); /* Espaçamento entre os itens */
+  line-height: 1.6;
+}
+
+.experience_list li::before {
+  content: "\2022"; /* Ponto marcador */
+  position: absolute;
+  left: 0;
+  color: var(--text-color-light); /* Cor do marcador */
+  font-size: 1.2em; /* Tamanho do marcador */
+}
